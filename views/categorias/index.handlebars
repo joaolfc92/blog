@@ -1,0 +1,27 @@
+<div class="container">
+
+	<div class="card-body">
+	<h3 class="categorias">Lista de Categorias :</h3>
+	<hr>
+	{{#each categorias}}
+		<a href="/categorias/{{slug}}"><ul class="categorias categorias__mod">{{nome}}</ul> </a>	
+	{{else}}
+
+	{{/each}}
+	</div>
+</div>
+
+<style>
+	.categorias{
+		color:white;
+		font-size: 30px;
+	}
+
+	.categorias__mod:hover{
+		color:coral;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	
+</style>

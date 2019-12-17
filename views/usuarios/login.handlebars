@@ -1,0 +1,92 @@
+<form action="/usuarios/login" method="POST">
+<div class="conteudo">
+	
+		<div class="tittle">
+			Login
+		</div>
+
+		<div class="login">
+			<label for="email">EMAIL :</label>
+			<input type="email" name="email" class="form-control" required>
+			<label for="email">SENHA :</label>
+			<input type="password" name="senha" class="form-control" required>
+
+			<button class="btn btn-warning btn-lg btn-block mt-5 btn-login " type="submit">ENTRAR</button>
+		</div>
+	
+</div>
+</form>
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+.conteudo{
+	height: 500px;
+	width: 500px;
+	background-color: black;
+	position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.tittle{
+	height: 100px;
+	width: 100%;
+	font-size: 30px;
+	color:white;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bolder;
+	background-color: crimson;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.login{
+	height: 400px;
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+	
+	
+}
+
+label{
+	color:white;
+	font-size: 15px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bolder;
+	margin-top: 10px;
+}
+
+.form-control{
+	width: 75%;
+	margin-left: 12.5%;
+	border-radius: 10px;
+	height: 50px;
+	margin-top: 10px;
+	background-color:#ccc ;
+	opacity: 0.5;
+
+}
+
+.btn-login{
+	width: 75%;
+	margin-left: 12.5%;
+	border-radius: 10px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bolder;
+}
+
+
+</style>
+
+
+
+
+

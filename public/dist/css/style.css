@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+body {
+  background-image: url("../img/9638d45dcfd02cd362e85d4f3d5ed0f2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top-center;
+}
+
+.container-fluid--top {
+  background-color: #222222;
+}
+
+.contact {
+  height: 50px;
+  display: flex;
+}
+
+.contact__mail, .contact__phone {
+  display: flex;
+  flex: 1.5;
+  justify-content: center;
+}
+
+.area__restrita {
+  display: flex;
+  flex: 1;
+}
+
+.contact__social {
+  display: flex;
+  flex: 1;
+}
+
+.contact__mail a, .contact__phone a, .contact__social a {
+  align-self: center;
+  color: #ababab;
+}
+
+.contact__mail a img, .contact__phone a img, .contact__social a img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.endereco {
+  font-size: 14px;
+}
+
+.menu__home, .navbar {
+  height: 86px;
+  font-family: "Oswald", sans-serif;
+}
+
+.menu {
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  height: 100px;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: 100%;
+}
+
+.header-menu {
+  display: flex;
+  flex: 6;
+  height: 100px;
+  justify-content: flex-end;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+}
+
+#menu-open {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding-top: 70px;
+  margin-right: 20px;
+}
+
+#menu-area {
+  height: 100vh;
+  width: 0px;
+  background-color: #222;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all ease 0.5s;
+  z-index: 999;
+  margin-top: 50px;
+}
+
+#menu-area ul, #menu-area li {
+  padding: 0;
+  list-style: none;
+}
+
+#menu-area li {
+  display: block;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+  line-height: 30px;
+  height: 20px;
+  margin-bottom: 25px;
+  padding-left: 55px;
+  padding-top: 25px;
+}
+
+#fechar {
+  display: none;
+}
+
+#img-menu {
+  margin-right: 20px;
+  width: 30px;
+}
+
+#menu-area li:hover {
+  color: #ff8829;
+}
+
+h1 .display-4 {
+  font-size: 67px;
+  font-family: "Dancing Script", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+	<header>
+
+		<div class="container-fluid container-fluid--top"> 
+			<div class="container">
+				<div class="contact">
+				<div class="contact__mail">
+					<a href="#">
+						<img src="/dist/img/social/localizador.png">
+						<span class="endereco">Avenida Genaro de Carvalho, 2809 - Recreio</span>
+					</a>
+				</div>
+				<div class="contact__phone">
+					<a href="#">
+						<img src="/dist/img/social/phone.png">
+						<span class="endereco">(21) 3486-9910</span>
+					</a>
+				</div>
+				
+				<div class="contact__social">
+					<a href="#"><img src="/dist/img/social/facebook.png"></a>
+					<a href="#"><img src="/dist/img/social/instagram.png"></a>
+					<a href="#"><img src="/dist/img/social/twitter.png"></a>
+					<a href="#"><img src="/dist/img/social/whats.png"></a>
+					<a href="#"><img src="/dist/img/social/snapchat.png"></a>
+				</div>
+				{{#if user}}
+				<h1>{{usuarios.nome}}</h1>
+				<a href="/usuarios/logout">	<button type="button" class="btn btn-outline-warning">Fazer Logout{{nome}}</button></a>
+				{{else}}
+				<div class="area__restrita">
+
+				<a href="/usuarios/login">	<button type="button" class="btn btn-outline-warning">Fazer Login</button></a>
+				{{/if}}
+				</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="container-fluid bg-light">
+			<div class="container">
+				<div class="menu__home">
+						
+					<div class="menu">
+						<div class="logo">
+						<a href="/">	<img src="/dist/img/social/zubat.png"> </a>
+					 	</div>
+				
+						<div class="header-menu">
+							<aside>
+								<div id="menu-open" onclick="menuToggle()">
+										<img src="/dist/img/social/mobile.png" width="50" id="open">
+										<img src="/dist/img/social/icon-close-512.png" width="36" id="fechar">
+				
+				
+								</div>
+				
+								<div id="menu-area">
+									<ul>
+										
+									<a href="#"><li><img src="/dist/img/social/quem-somos-1.png" height="30" id="img-menu">Quem Somos</li></a>
+									<a href="/categorias"><li><img src="/dist/img/social/a-escola.png" height="30" id="img-menu">Categorias</li></a>
+									<a href="/admin/postagens"><li> <img src="/dist/img/social/razao.png" height="30" id="img-menu">Postagens</li></a>
+									<a href="/usuarios/login"><li><img src="/dist/img/social/user-login-icon-29.png" height="30" id="img-menu">Login</li></a>
+									<a href="#"><li> <img src="/dist/img/social/artigos.png" height="30" id="img-menu">Registro</li></a>
+									<a href="#"><li> <img src="/dist/img/social/atividades.png" height="30" id="img-menu">Atividades</li></a>
+									<a href="/admin/contato"><li> <img src="/dist/img/social/contato.png" height="30" id="img-menu">Contato</li></a>
+									</ul>
+								</div>
+							</aside>
+						</div>
+					</div>
+						
+						
+				</div>
+			</div>
+		</div>
+	</header>
+

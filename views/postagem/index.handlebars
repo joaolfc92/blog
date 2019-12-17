@@ -1,0 +1,49 @@
+<div class="card mt-5">
+	<div class="card-body">
+		<div class="conteudo">
+			<h1 class="tittle">{{postagem.titulo}}</h1>
+			<div class="linha"></div>
+
+			<div class="info">
+				<div class="categoria">{{postagem.categoria}}</div>
+				<div class="data">{{postagem.data}}</div>
+			</div>
+
+			<div class="linha"></div>
+
+			<div class="header d-flex flex-column">
+				<div class="desc mt-3 mb-3">{{postagem.descricao}}</div>
+				<div class="cont mt-3 mb-3">{{postagem.conteudo}}</div>
+			</div>
+			
+
+
+		</div>
+	</div>
+</div>
+
+
+
+<style>
+	.tittle{
+		text-align: center;
+	}
+
+	.linha{
+		height: 1px;
+		width: 100%;
+		background-color: #ccc;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.info{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+
+
+
+</style>
