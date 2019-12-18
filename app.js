@@ -17,6 +17,7 @@ const Categoria = mongoose.model('categorias')
 const usuarios = require('./routes/usuario')
 const passport = require('passport')
 require('./config/auth')(passport)
+const db = require('./config/db')
 
 
 
@@ -63,7 +64,7 @@ require('./config/auth')(passport)
 		mongoose.Promise = global.Promise // variavel que evita error
 
 		// conectando ao banco de dados (mongobd / localhost / nome do banco a ser criado)
-		mongoose.connect("mongodb://localhost/blogapp", {useNewUrlParser: true}).then(()=>{
+		mongoose.connect(db.mongoURI, {useNewUrlParser: true}).then(()=>{
 			console.log('conectado ao banco')
 		}).catch((erro)=>{
 			console.log('Erro na conexão: '+erro)
